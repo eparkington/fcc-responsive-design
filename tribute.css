@@ -1,5 +1,8 @@
+body {
+    background: url("https://i.postimg.cc/mrmnKZXN/bg2.jpg") center/cover;
+}
+
 #main {
-  background: url("https://i.postimg.cc/mrmnKZXN/bg2.jpg") center/cover;
   display: flex;
   flex-direction: column;
   font-family: sans serif;
@@ -34,7 +37,7 @@
 }
 #img-div {
   margin: auto;
-  width: 50rem;
+  width: 25rem;
 }
 
 #image {
@@ -53,14 +56,13 @@
 }
 
 #tribute-info {
-  margin: auto;
-  box-sizing: border-box;
-  background: #fff;
-  padding: 0.5rem;
-  border-radius: 5px;
-  width: 30rem;
-  border-radius: 5px;
-  border: 8px solid rgba(0,178,169, 0.5);
+    margin: auto;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 0.5rem;
+    width: 30rem;
+    border: 5px solid rgba(0,178,169, 0.5);
+    border-radius: 5%;
 }
 
 #tribute-info h3 {
@@ -124,4 +126,13 @@ footer::before {
   padding-top: 0.7rem;
   font-size: 0.8rem;
   font-weight: bold;
-}s
+}
+
+@media (min-width: 40rem) {
+
+#img-div {
+  margin: auto;
+  width: 40rem;
+}
+
+}
