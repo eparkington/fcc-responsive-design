@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>FCC: Parent Survey</title>
+	<meta name="author" content="l.a. driscoll">
+	<meta name="description" content="FCC Form example using vanilla JS and CSS">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+	<header></header>
+	<main>
+  <header class="header">
+    <div class="header-background">
+    <h1 id="title">Parent Survey</h1>
+      <p id="description">Thank you for your response.</p></div>
+  </header>
+<form id="survey-form">
+  <fieldset class="personalia">
+    <legend>Your Info</legend>
+      <div class="personalia-item">
+        <label for="name" id="name-label">Name</label> <input type="text" id="name" placeholder="Enter your name here" required>
+        </div>
+      <div class="personalia-item">
+       <label for="email" id="email-label">E-mail</label> <input type="email" name="email" placeholder="Enter your e-mail here" required>
+      </div>
+      <div class="personalia-item">
+       <label for="studentname" id="student-name-label">Student Name</label><input type="text" placeholder="Enter your student's name here" id="student-name" required>
+      </div>
+      <div class="personalia-item">
+       <label for="grade" id="number-label">Student Grade Level</label><input type="number" id="number" min="9" max="12" placeholder="Enter student grade level">
+    </div>
+  </fieldset>
+  <fieldset class="course-section">
+    <legend class="course-header">Course Section</legend>
+      <label for="1a"><input type="radio" name="course-section" id="1a" value="1a"> 1A</label>
+      <label for="3a"><input type="radio" name="course-section" id="3a" value="3a"> 3A</label>
+      <label for="4a"><input type="radio" name="course-section" id="4a" value="4a"> 4A</label>
+      <label for="1b"><input type="radio" name="course-section" id="1b" value="1b"> 1B</label>
+      <label for="2b"><input type="radio" name="course-section" id="2b" value="2b"> 2B</label>
+      <label for="4b"><input type="radio" name="course-section" id="4b" value="4b"> 4B</label>
+  </fieldset>
+  <fieldset class="accessibility">
+    <legend>Accessibility</legend>
+  <div class="tech-question-wrap">
+  <p class="tech-question">Which describes your biggest concern for virtual learning?</p>
+  <select id="dropdown">
+    <option value="select">Select One</option>
+    <option value="access">No stable access to internet.</option>
+  <option value="synchronicity">Synchronous learning clashes with work schedule.</option>
+  <option value="engagement">Lack of engagement with virtual environment.</option>
+  <option value="materials">Lack of access to appropriate materials.</option>
+    <option value="facetoface">Unable to meet teacher face-to-face if problems arise.</option>
+  </select>
+  </div>
+  <div class="tech-accessibility-wrap">
+    <p class="tech-accessibility">Select the items that your student has access to within the home environment:</p>
+    <label for="tech1"><input type="checkbox" value="personal-computer" id="tech1">Personal Computer</label>
+    <label for="tech2"><input type="checkbox" value="internet" id="tech2">Internet</label>
+    <label for="tech3"><input type="checkbox" value="tablet" id="tech3">Tablet</label>
+    <label for="tech4"><input type="checkbox" value="printer" id="tech4">Printer</label>
+    </div>
+ <div class="open-feedback-wrap">
+    <p class="open-feedback">What is one thing you want me to know about your student?</p>
+   <textarea name="studentknowledge" id="open-feedback__response" placeholder="Keep it positive!"></textarea></div>
+    </fieldset>
+  <input type="submit" id="submit" value="Submit">
+  <div class="feedback"></div>
+</form>
+
+  </main>
+	<footer></footer>
+	<script type="text/javascript" src="survey.js"></script>
+</body>
+
+</html>
