@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+
+body {
+     box-sizing: border-box;
+    background: url("https://i.postimg.cc/RVZPs9RL/header.jpg");
+    background-position: top -1rem left 15rem;
+}
+
+main {
+  padding-top: 1.5rem;
+  font-family: 'Open Sans', sans serif;
+}
+
+.header {
+  height: 8rem;
+  width: 25rem;
+  padding: 0 2rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f5f1da;
+  border-radius: 5px;
+  border: 2px solid #1b1c25;
+}
+
+#title {
+ margin: 0;
+ color: #1f4068;
+ font-weight: 600;
+ text-transform: uppercase;
+}
+
+#description {
+ margin: 0;
+ text-align: center;
+}
+
+#survey-form {
+  margin: auto;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  background: #f5f1da;
+  border-radius: 5px;
+}
+
+fieldset {
+  margin: 0.5rem;
+  padding: 0.8rem;
+  width: 90%;
+  border-color: #1b1c25;
+}
+
+legend {
+  font-weight: bold;
+  color: #1f4068;
+  text-transform: uppercase;
+}
+
+.personalia-item {
+  display: grid;
+  grid-template-columns: auto 14rem;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.personalia-item label::after {
+  content: ":";
+}
+
+input[type=text],
+input[type=email],
+input[type=number] {
+  outline: none;
+}
+
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=number]:hover {
+  background: #ebecf1;
+  border: 1px solid black;
+}
+
+.course-section {
+  display: flex;
+}
+
+input[type=radio] {
+  margin: 0.4rem;
+}
+
+.tech-question {
+  margin: 0;
+  padding: 0;
+}
+
+#dropdown {
+  margin-top: 0.4rem;
+}
+
+.tech-accessibility-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.tech-accessibility {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+input[type=checkbox] {
+  margin: 0.4rem;
+}
+
+#open-feedback__response {
+  margin-top: 0;
+  margin-left: 0.5rem;
+  outline: none;
+  height: 8rem;
+  width: 22rem;
+}
+
+#open-feedback__response:hover {
+  background: #ebecf1;
+  border: 1px solid black;
+}
+
+#submit {
+  width: 8rem;
+  height: 2rem;
+  margin: auto;
+  color: #fff;
+  background: #1f4068;
+}
